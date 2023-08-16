@@ -1,8 +1,6 @@
 <html lang="en-US">
   <head>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAwiajsffeSnnvD83rekEgaOZs2GXLoU0&amp;callback=initMap"></script>
-  
-    <script src="https://www.googletagmanager.com/gtag/js?id=G-4450TTMQC7"></script>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta
       name="viewport"
@@ -32,47 +30,8 @@
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-  
-    <script
-      type="text/javascript"
-      charset="UTF-8"
-      src="https://maps.google.com/maps-api-v3/api/js/53/14/common.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="UTF-8"
-      src="https://maps.google.com/maps-api-v3/api/js/53/14/util.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="UTF-8"
-      src="https://maps.google.com/maps-api-v3/api/js/53/14/map.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="UTF-8"
-      src="https://maps.google.com/maps-api-v3/api/js/53/14/marker.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="UTF-8"
-      src="https://maps.google.com/maps-api-v3/api/js/53/14/geocoder.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="UTF-8"
-      src="https://maps.google.com/maps-api-v3/api/js/53/14/onion.js"
-    ></script>
-    <script
-      type="text/javascript"
-      charset="UTF-8"
-      src="https://maps.google.com/maps-api-v3/api/js/53/14/controls.js"
-    ></script>
+        
   </head>
-  
-
-
-
   <body>
     <header id="header">
       <div class="top-menu-row">
@@ -238,7 +197,9 @@
 
                 <div class="map">
                   <div id="branches">
-                    <div class="branches-outline"></div>
+                    <div class="branches-outline">
+                      <div id="map"></div>
+                    </div>
                   </div>
                 </div>
                 
@@ -375,6 +336,7 @@
                   </div>
 
                 </div>
+
               </div>
               <!-- Forms -->
               <div class="col">
@@ -484,6 +446,8 @@
         </div>
       </section>
     </main>
+    <script src="./assets/js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ22DYsXQaHgiAPASZhRjJ0QGBSQaufgU&callback=initMap"defer></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

@@ -559,8 +559,11 @@ input:disabled {
   width: 46.6%;
 }
 
-.ct-map{
+.map{
   position: relative;
+}
+#map{
+ height: 32vh;
 }
 #branches {
   position: relative; 
